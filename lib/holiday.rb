@@ -79,7 +79,6 @@ def all_supplies_in_holidays(holiday_hash)
         puts "Memorial Day: #{array.join(", ")}"
       end
     end
-    end
   end
 end
 
