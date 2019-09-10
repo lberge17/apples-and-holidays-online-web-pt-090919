@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
         end
       when :summer
         puts "Summer:"
-        puts "  Fourth of July: #{array.join(", ")}"
+        puts "  Fourth Of July: #{array.join(", ")}"
       when :fall
         puts "Fall:"
         puts "  Thanksgiving: #{array.join(", ")}"
