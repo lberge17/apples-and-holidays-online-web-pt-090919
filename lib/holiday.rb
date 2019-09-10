@@ -64,19 +64,19 @@ def all_supplies_in_holidays(holiday_hash)
       when :winter
         puts "Winter:"
         if holiday == :christmas
-          puts "Christmas: #{array.join(", ")}"
+          puts "  Christmas: #{array.join(", ")}"
         elsif holiday == :new_years
-          puts "New Years: #{array.join(", ")}"
+          puts "  New Years: #{array.join(", ")}"
         end
       when :summer
         puts "Spring:"
-        puts "Fourth of July: #{array.join(", ")}"
+        puts "  Fourth of July: #{array.join(", ")}"
       when :fall
         puts "Fall:"
-        puts "Thanksgiving: #{array.join(", ")}"
+        puts "  Thanksgiving: #{array.join(", ")}"
       when :spring
         puts "Spring:"
-        puts "Memorial Day: #{array.join(", ")}"
+        puts "  Memorial Day: #{array.join(", ")}"
       end
     end
   end
