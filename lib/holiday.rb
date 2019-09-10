@@ -62,24 +62,6 @@ def all_supplies_in_holidays(holiday_hash)
     hash_data.each do |holiday, array|
       puts "#{season.to_s.capitalize}:" if holiday != :new_years
       puts "  #{holiday.to_s.capitalize}: #{array.join(", ")}"
-      case season
-      when :winter
-        puts "Winter:" if holiday == :christmas
-        if holiday == :christmas
-          puts "  Christmas: #{array.join(", ")}"
-        elsif holiday == :new_years
-          puts "  New Years: #{array.join(", ")}"
-        end
-      when :summer
-        puts "Summer:"
-        puts "  Fourth Of July: #{array.join(", ")}"
-      when :fall
-        puts "Fall:"
-        puts "  Thanksgiving: #{array.join(", ")}"
-      when :spring
-        puts "Spring:"
-        puts "  Memorial Day: #{array.join(", ")}"
-      end
     end
   end
 end
