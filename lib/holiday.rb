@@ -63,10 +63,9 @@ def all_supplies_in_holidays(holiday_hash)
       case season
       when :winter
         puts "Winter:"
-        case holiday
-        when :christmas
+        if holiday == :christmas
           puts "Christmas: #{array.join(", ")}"
-        when :new_years
+        elsif holiday == :new_years
           puts "New Years: #{array.join(", ")}"
         end
       when :summer
