@@ -64,7 +64,7 @@ def all_supplies_in_holidays(holiday_hash)
       if holiday == :christmas || holiday == :thanksgiving
         puts "  #{holiday.to_s.capitalize!}: #{array.join(", ")}"
       else
-        puts "  #{holiday.to_s.split("_").capitalize!.join(" ")}: #{array.join(", ")}"
+        puts "  #{holiday.to_s.split("_").collect{|word| word.capitalize!}.join(" "}: #{array.join(", ")}"
       end
     end
   end
