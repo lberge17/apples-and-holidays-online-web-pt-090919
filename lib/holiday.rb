@@ -61,9 +61,10 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, hash_data|
     hash_data.each do |holiday, array|
       case season
-        :winter
-          puts "Winter:"
-          case holiday
+      when :winter
+        puts "Winter:"
+      end
+      case holiday
             :christmas
               puts "Christmas: #{array.join(", ")}"
             :new_years
